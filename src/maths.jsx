@@ -8,10 +8,15 @@ const Maths = () => {
     <div className='mx-14'> 
        <div class= 'flex'>
      
-     <Link to='/'>  <img src= {image10} alt='homeicon image'/> </Link>
-     <Link to='/flashcard'> &gt; Flashcard  &gt; </Link>
-     <Link to= '/flashcard/maths'> Mathematics  &gt; </Link>
-    <Link to='/flashcard/maths/relations' > Relations and Functions  &gt; </Link>
+     <Link to='/'>  <img src= {image10} alt='homeicon image'  className="h-6 w-6"/> </Link>
+     <Link to='/flashcard' className="mx-2"> &gt; Flashcard  &gt; </Link>
+     <Link to= '/flashcard/maths' className='text-blue-800 font-bold'> Mathematics  </Link>
+   
+  </div>
+
+
+  <div class="flex justify-center h-72 w-3/4 p-36 bg-blue-400 my-24 mx-36">
+        <div> Content awaited </div>       
   </div>
 
 <div className="flex flex-col w-1/4">

@@ -4,17 +4,21 @@ import image10 from "./home.png";
 
 const Flashcard = () => {
   return (
-    <div class="mx-14 flex">
-      <Link to="/">
-        <img src={image10} alt="homeicon image" />
-      </Link>
-      <Link to="/flashcard"> &gt; Flashcard &gt; </Link>
-      <Link to="/flashcard/maths"> Mathematics &gt;</Link>
+    <div className="mx-14">
+      <div class=" flex">
+       <Link to="/">  <img src={image10} alt="homeicon image"  className="h-6 w-6" />  </Link>
+      <div className="mx-2"> &gt;</div>
+      <Link to="/flashcard" className="text-blue-800 font-bold">  Flashcard </Link>
+      </div>
+      
 
-     <div className="flex flex-col">
+      
 
-     <div class="flex justify-center h-72 w-72 m-36 p-36 bg-blue-400 ">
-        <div> Content awaited</div>
+    
+
+     <div class="flex justify-center h-72 w-3/4 p-36 bg-blue-400 my-24 mx-36">
+        <div> Content awaited </div>
+        
       </div>
 
       
@@ -29,7 +33,7 @@ const Flashcard = () => {
       </div>
 
 
-     </div>
+   
 
 
 

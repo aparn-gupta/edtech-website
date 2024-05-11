@@ -2,7 +2,7 @@ import React from "react";
 import image from "./hyggex.png";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
-import './new.css'
+
 
 const Navbar = () => {
   return (
@@ -13,9 +13,7 @@ const Navbar = () => {
         </div>
  
         <div class="flex" >
-          <select>
-            
-          </select>
+         
           <div > <NavLink to="/" className = " focus:bg-gradient-to-t from-blue-500 to-blue-900  focus:text-white px-5 py-2 text-center rounded-full basis-full" >Home </NavLink> </div>
           <div  >   <NavLink to="/flashcard" className = " focus:bg-gradient-to-t from-blue-500 to-blue-900 px-5 py-2 text-center focus:text-white rounded-full basis-full"   > Flashcard  </NavLink> </div>
           <div  >  <NavLink to="/contact" className = " focus:bg-gradient-to-t from-blue-500 to-blue-900 focus:text-white px-5 py-2 text-center rounded-full basis-full"> Contact </NavLink></div>

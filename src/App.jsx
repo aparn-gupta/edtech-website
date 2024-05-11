@@ -14,7 +14,7 @@ import Createflashcard from "./createflashcard";
 
 import Faqsection from "./faqsection";
 import faqData from "./faqdata";
-import VolumeControlButton from "./volume";
+import Study from "./study";
 
 
 
@@ -35,6 +35,7 @@ function App() {
           <Route path="/create-flashcard" element={<Createflashcard />} />
           <Route path="/flashcard/maths" element={<Maths />} />
           <Route path="/flashcard/maths/relations" element={<Relations />} />
+          <Route path="/flashcard/maths/relations/study" element={<Relations />} />
         </Routes>
 
         <div className="mx-14">   
@@ -45,7 +46,7 @@ function App() {
 
 
          
-            <VolumeControlButton />
+        
 
           
 

@@ -25,7 +25,7 @@ const Midsection = () => {
       </div>
 
 
-          <h1 class="mt-28 mb-12 text-blue-800 text-3xl font-bold"> FAQ </h1>
+          <h1 class="mt-28 mb-12 bg-gradient-to-t from-blue-600 to-blue-900 inline-block text-transparent bg-clip-text text-5xl font-bold"> FAQ </h1>
        
 
 
