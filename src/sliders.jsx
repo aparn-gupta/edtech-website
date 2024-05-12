@@ -10,6 +10,7 @@ import image11 from './expand.png'
 import { FullScreen, useFullScreenHandle } from "react-full-screen";
 import plusicon from './plus.png'
 import minusicon from './minus.png'
+import { Link } from "react-router-dom";
 
 
 
@@ -98,11 +99,11 @@ const Slider = () => {
       </FullScreen> 
 
       <div class="flex justify-center my-5">
-          <div  class="mr-24"> <img src={image3} onClick={() => {window.location.reload()}}/></div>
+          <div  class="mr-24"> <Link to= "/flashcard/maths/relations/study"> <img src={image3} /> </Link></div>
           <div  class="mx-8 "> <img class= 'h-12 w-12' src={image7} onClick={prevDiv} /></div>
           <div  class="mx-8 font-bold text-2xl"> {indexx + 1} / 10 </div>
           <div  class="mx-8">  <img class="h-12 w-12 mr-4" src={image6} onClick={nextDiv} />   </div>
-          <div  class="ml-24"> <img class="mr-4" src={image11} onClick={handle.enter} /></div>
+          <div  class="ml-24"> <img class="mr-4" src={image11} onClick={handle.enter} /> </div>
 
 
       </div>
