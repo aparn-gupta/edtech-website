@@ -1,19 +1,21 @@
 import React from "react";
+import { useState, useRef } from 'react';
 import divs from "./divs";
 import image1 from "./bulb.png";
 import image2 from "./volume.png";
 import image3 from './refresh-arrow.png'
 import image6 from './arrow-right.png'
 import image7 from './back.png'
-import Fulll from "./fullscreen";
-import  {useCallback} from 'react';
 import image11 from './expand.png'
 import { FullScreen, useFullScreenHandle } from "react-full-screen";
+import plusicon from './plus.png'
+import minusicon from './minus.png'
 
 
 
 const Slider = () => {
   const [indexx, setIndexx] = React.useState(0);
+  const audioRef = useRef(null);
 
   const nextDiv = () => {
     setIndexx((prev) => (prev === 9 ? 1 : prev + 1));
@@ -28,31 +30,69 @@ const Slider = () => {
   const handle = useFullScreenHandle();
 
  
+    const [volume, setVolume] = useState(0.5); 
+    const [volumeControls, setVolumeControls] = useState(false)
+
+   
+
+    const handleVolumeChange = (newVolume) => {
+    
+      newVolume = Math.min(Math.max(newVolume, 0), 1);
+      setVolume(newVolume);
+      setVolume(newVolume);
+    if (audioRef.current) {
+      audioRef.current.volume = newVolume;
+    }      
+  
+    }   
+
+
+    const changeVolume = () => {
+      setVolumeControls( prev => !prev)
+    }
+    
+    let renderbutton = <div> </div>
+  
+
+    volumeControls ? renderbutton = <div>
+      <img src={plusicon} onClick={() => handleVolumeChange(volume - 0.1)} />
+      <span>Volume: {Math.round(volume * 100)}%</span>
+      <img src= {minusicon} onClick={() => handleVolumeChange(volume + 0.1)}/> 
+      {/* <audio ref={audioRef} src="" controls />  */}
+      </div> : renderbutton = <div> </div> 
 
   return (
 
     <div> 
       
+      
 
     
        <FullScreen handle={handle}>
-        
-       <div class= 'flex justify-center '>
+        <div>
 
-      <div class ="bg-gradient-to-tr from-blue-500 to-blue-900 w-1/2 h-96 rounded-3xl max-h-screen max-w-screen-lg">
+        <div class= 'flex justify-center '>
 
-        <div class= 'flex justify-between m-9' >
-          <img src={image1} />
-          <img src={image2} />  
-            </div>
+      <div class ="bg-gradient-to-tr from-blue-500 to-blue-900  rounded-3xl max-h-screen max-w-screen-lg w-1/2 h-96 ">
 
-            <div class = 'flex justify-center'>  
-            <div class= 'my-24 text-4xl text-white font-bold'> {displayed}     </div> 
-              </div>  
-   
-   </div>  
-   
-   </div>  
+      <div class= 'flex justify-between m-9' >
+       <img src={image1} onClick={() => {}}/>
+       
+       <img src={image2} onClick={changeVolume} />  
+       
+      </div>
+      <div className="text-white flex justify-center"> {renderbutton} </div>
+
+      <div class = 'flex justify-center'>  
+      <div class= 'my-24 text-4xl text-white font-bold'> {displayed}     </div> 
+        </div>  
+
+</div>  
+
+</div>  
+          
+        </div>       
+       
 
 
       </FullScreen> 
@@ -67,12 +107,7 @@ const Slider = () => {
 
       </div>
 
-
-
-
-
-</div> 
-      
+</div>       
     
     
   );

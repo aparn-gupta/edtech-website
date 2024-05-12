@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import image10 from './home.png'
+
+import Homeiconelement from './homeiconelement'
+
 
 const Maths = () => {
   return (
@@ -8,8 +10,8 @@ const Maths = () => {
     <div className='mx-14'> 
        <div class= 'flex'>
      
-     <Link to='/'>  <img src= {image10} alt='homeicon image'  className="h-6 w-6"/> </Link>
-     <Link to='/flashcard' className="mx-2"> &gt; Flashcard  &gt; </Link>
+    <Homeiconelement />
+     <Link to='/flashcard' className="mx-2"> Flashcard  &gt; </Link>
      <Link to= '/flashcard/maths' className='text-blue-800 font-bold'> Mathematics  </Link>
    
   </div>
@@ -19,13 +21,17 @@ const Maths = () => {
         <div> Content awaited </div>       
   </div>
 
-<div className="flex flex-col w-1/4">
-<Link className="text-blue-800 text-3xl font-bold border-2 border-solid border-blue-800 rounded-xl my-2 py-3 px-4" to= '/flashcard/maths/relations'> Relations and Functions </Link>
-<Link className="text-blue-800 text-3xl font-bold border-2 border-solid border-blue-800 rounded-xl my-2 py-3 px-4"> Section 2 </Link>
-<Link className="text-blue-800 text-3xl font-bold border-2 border-solid border-blue-800 rounded-xl my-2 py-3 px-4"> Section 3 </Link>
-<Link className="text-blue-800 text-3xl font-bold border-2 border-solid border-blue-800 rounded-xl my-2 py-3 px-4"> Section 4 </Link>
+<div className="flex flex-col w-2/5">
+<Link className="text-blue-800 text-3xl font-bold border-2 border-solid border-blue-800 rounded-xl my-2 py-3 px-4" to= '/flashcard/maths/relations/study'> Relations and Functions </Link>
+<Link className="text-blue-800 text-3xl font-bold border-2 border-solid border-blue-800 rounded-xl my-2 py-3 px-4"> Topic 2 </Link>
+<Link className="text-blue-800 text-3xl font-bold border-2 border-solid border-blue-800 rounded-xl my-2 py-3 px-4"> Topic 3 </Link>
+<Link className="text-blue-800 text-3xl font-bold border-2 border-solid border-blue-800 rounded-xl my-2 py-3 px-4"> Topic 4 </Link>
 
-</div> </div>
+</div>
+
+
+
+ </div>
    
 
 

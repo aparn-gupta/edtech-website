@@ -1,6 +1,5 @@
 import React from "react";
 import image from "./hyggex.png";
-import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
 

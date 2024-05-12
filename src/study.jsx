@@ -1,9 +1,18 @@
 import React from 'react'
+import Relations from './relations'
+import Slider from './sliders'
+import Midsection from './midsection'
 
 const Study = () => {
   return (
     <div>
-      Study section
+      <Relations />
+
+      <div className="mx-14">
+          <Slider />
+          <Midsection /> 
+               
+        </div>
     </div>
   )
 }

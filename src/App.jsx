@@ -9,15 +9,13 @@ import Flashcard from "./flashcard";
 import Login from "./login";
 import Maths from "./maths";
 import Relations from "./relations";
-import Midsection from "./midsection";
 import Createflashcard from "./createflashcard";
-
-import Faqsection from "./faqsection";
-import faqData from "./faqdata";
 import Study from "./study";
-
-
-
+import Test from "./test";
+import Quiz from "./quiz";
+import Game from "./game";
+import Others from "./others";
+import Midsecandfaq from "./midsecandfaq";
 
 function App() {
   return (
@@ -35,34 +33,17 @@ function App() {
           <Route path="/create-flashcard" element={<Createflashcard />} />
           <Route path="/flashcard/maths" element={<Maths />} />
           <Route path="/flashcard/maths/relations" element={<Relations />} />
-          <Route path="/flashcard/maths/relations/study" element={<Relations />} />
+          <Route path="/flashcard/maths/relations/study" element={<Study />} />
+          <Route path="/flashcard/maths/relations/quiz" element={<Quiz />} />
+          <Route path="/flashcard/maths/relations/test" element={<Test />} />
+          <Route path="/flashcard/maths/relations/game" element={<Game />} />
+          <Route
+            path="/flashcard/maths/relations/others"
+            element={<Others />}
+          />
         </Routes>
 
-        <div className="mx-14">   
-        <Midsection />          
-          {faqData.map((item) => (
-            <Faqsection key={item.id} Q={item.Q} A={item.A} />
-          ))}
-
-
-         
-        
-
-          
-
-
-
-
-
-        </div>
-
-
-   
-
-
-       
-
-       
+        <Midsecandfaq />
       </div>
     </BrowserRouter>
   );

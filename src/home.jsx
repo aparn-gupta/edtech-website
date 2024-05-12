@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import image10 from "./home.png";
+import Contentawaited from './Contentawaited'
 
 const Home = () => {
   return (
@@ -8,11 +8,9 @@ const Home = () => {
    
 
 
-      <div class="flex justify-center h-72 w-3/4 p-36 bg-blue-400 my-24 mx-36">
-        <div> Content awaited </div>       
-  </div>
+   <Contentawaited />
 
-      <div className="flex flex-col w-1/4">
+      <div className="flex flex-col w-2/5">
       <Link className="text-blue-800 text-3xl font-bold border-2 border-solid border-blue-800 rounded-xl my-2 py-3 px-4" to= '/flashcard'> Go to Flashcard </Link>
         <Link className="text-blue-800 text-3xl font-bold border-2 border-solid border-blue-800 rounded-xl my-2 py-3 px-4"> Section 2 </Link>
         <Link className="text-blue-800 text-3xl font-bold border-2 border-solid border-blue-800 rounded-xl my-2 py-3 px-4"> Section 3 </Link>
