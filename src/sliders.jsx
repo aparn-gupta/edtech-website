@@ -19,7 +19,7 @@ const Slider = () => {
   const audioRef = useRef(null);
 
   const nextDiv = () => {
-    setIndexx((prev) => (prev === 9 ? 1 : prev + 1));
+    setIndexx((prev) => (prev === 9 ? 0 : prev + 1));
   };
 
   const prevDiv = () => {
