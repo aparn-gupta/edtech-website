@@ -16,11 +16,11 @@ const Navbar = () => {
   const menubar = 
   <div>
        <div className=" flex flex-col my-6 md:hidden ">
-    <div> <Link to="/" className="  py-1 px-48 my-1 basis-full bg-gradient-to-t from-blue-500 to-blue-900  focus:text-black  text-white text-center">Home </Link> </div>
-<div>   <Link to="/flashcard" className="py-1 px-48 my-1 basis-full bg-gradient-to-t from-blue-500 to-blue-900 focus:text-black  text-white text-center"> Flashcard  </Link> </div>
-<div>  <Link to="/contact" className=" py-1 px-48 my-1 basis-full bg-gradient-to-t from-blue-500 to-blue-900  focus:text-black    text-white text-center"> Contact </Link></div>
-<div>   <Link to="/faq" className=" py-1  bg-gradient-to-t px-48 basis-full from-blue-500 to-blue-900  focus:text-black text-white text-center"> FAQ</Link></div>
-<div>  <Link to="/login" className=" py-1 bg-gradient-to-t basis-full px-48 from-blue-500 to-blue-900  focus:text-black text-white text-center"> Login </Link></div>
+    <div className="w-full  py-1  my-0.5  bg-gradient-to-t from-blue-500 to-blue-900   text-white text-center"> <Link to="/" className="  focus:text-black">Home </Link> </div>
+<div  className="w-full  py-1 my-0.5  bg-gradient-to-t from-blue-500 to-blue-900   text-white text-center" >   <Link to="/flashcard" className="focus:text-black "> Flashcard  </Link> </div>
+<div  className="w-full  py-1  my-0.5  bg-gradient-to-t from-blue-500 to-blue-900  text-white text-center">  <Link to="/contact" className=" focus:text-black "> Contact </Link></div>
+<div className="w-full  py-1  my-0.5  bg-gradient-to-t from-blue-500 to-blue-900    text-white text-center"  >   <Link to="/faq" className=" focus:text-black  "> FAQ</Link></div>
+<div className="w-full  py-1  my-0.5  bg-gradient-to-t from-blue-500 to-blue-900  text-white text-center" >  <Link to="/login" className=" focus:text-black "> Login </Link></div>
 
     </div>
 
