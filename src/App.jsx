@@ -20,7 +20,8 @@ import Midsecandfaq from "./midsecandfaq";
 function App() {
   return (
     <BrowserRouter>
-      <div className=" mr-4 md:mr-9 ml-9 md:ml-14">
+    
+         <div className="md:mr-9 ml-5 mr-5 md:ml-14">
         <Navbar />
       </div>
       <div>

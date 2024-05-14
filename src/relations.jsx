@@ -11,7 +11,7 @@ const Relations = () => {
       <div class="flex text-xs md:text-base">
        <Homeiconelement />
         <Link to="/flashcard" > Flashcard &gt; </Link>
-        <Link to="/flashcard/maths" className="mx-2"> Mathematics &gt; </Link>
+        <Link to="/flashcard/maths" className="md:mx-2 mx-0.5"> Mathematics &gt; </Link>
         <Link className="text-blue-800 font-bold" to="/flashcard/maths/relations/study"> Relations and Functions </Link>
       </div>
 

@@ -104,9 +104,9 @@ const Slider = () => {
 
       <div className="flex justify-center my-5">
           <div> <img className="md:mr-24 mr-14 h-6 w-6 md:h-10 md:w-10" onClick={() => setIndexx(0)}  src={image3} /></div>
-          <div> <img className= 'h-6 w-6 md:h-10 md:w-10 md:mx-8 mx-6' src={image7} onClick={prevDiv} /></div>
+          <div> <img className= 'h-6 w-6 md:h-10 md:w-10 md:mx-8 mx-3' src={image7} onClick={prevDiv} /></div>
           <div className="md:mx-2 font-bold md:text-2xl"> {indexx + 1} / 10 </div>
-          <div>  <img className="md:h-10 md:w-10 h-6 w-6 md:mx-8 mx-6" src={image6} onClick={nextDiv} />   </div>
+          <div>  <img className="md:h-10 md:w-10 h-6 w-6 md:mx-8 mx-3" src={image6} onClick={nextDiv} />   </div>
           <div> <img className="md:ml-24 ml-14 h-6 w-6 md:h-10 md:w-10" src={image11} onClick={handle.enter} /> </div>
 
 
