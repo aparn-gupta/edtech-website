@@ -5,19 +5,19 @@ import image5 from "./createfc.png";
 
 const Midsection = () => {
   return (
-    <div>
+   
 
 
-      <div class="flex justify-between my-12">
+      <div class="flex justify-between my-8 md:my-12">
 
-        <div class="h-20 w-56">
-          <img src={image4} />
+        <div class="w-1/4"> 
+          <img class = 'w-full' src={image4} />
           </div>
 
 
-          <div class = 'flex justify-between'>
-            <Link to= "/create-flashcard" class = 'w-72 h-14'>
-              <img src={image5} />
+          <div class = 'w-1/4'>
+            <Link to= "/create-flashcard" >
+              <img class = 'w-full md:pt-12 pt-4' src={image5} />
             </Link>         
           </div>
 
@@ -29,7 +29,7 @@ const Midsection = () => {
 
 
 
-    </div>
+ 
   );
 };
 

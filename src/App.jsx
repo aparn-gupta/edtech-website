@@ -20,7 +20,7 @@ import Midsecandfaq from "./midsecandfaq";
 function App() {
   return (
     <BrowserRouter>
-      <div className=" mx-4 md:mx-14">
+      <div className=" mr-4 md:mr-9 ml-9 md:ml-14">
         <Navbar />
       </div>
       <div>
@@ -37,10 +37,7 @@ function App() {
           <Route path="/flashcard/maths/relations/quiz" element={<Quiz />} />
           <Route path="/flashcard/maths/relations/test" element={<Test />} />
           <Route path="/flashcard/maths/relations/game" element={<Game />} />
-          <Route
-            path="/flashcard/maths/relations/others"
-            element={<Others />}
-          />
+          <Route path="/flashcard/maths/relations/others" element={<Others />}/>
         </Routes>
 
         <Midsecandfaq />

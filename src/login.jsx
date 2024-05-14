@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
-    <div className='mx-14'>
-       <div class=" flex">
+    <div className='m-4 md:mx-14'>
+       <div class=" flex text-xs md:text-base">
       <Homeiconelement />
       <Link to="/login" className="text-blue-800 font-bold">  Login </Link>
       </div>

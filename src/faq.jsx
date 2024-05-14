@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 
 const Faq = () => {
   return (
-    <div className='mx-14'>
-       <div class=" flex">
+    <div className='m-4 md:mx-14'>
+       <div class="text-xs md:text-base flex">
       <Homeiconelement />
       <Link to="/faq" className="text-blue-800 font-bold">  FAQ </Link>
       </div>
