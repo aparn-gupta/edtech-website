@@ -41,7 +41,7 @@ const Navbar = () => {
      
     <div className=" w-full flex justify-between font-sans ">
       <div className=" w-1/3 md:w-1/6 ">
-        <img className=" w-full" src={image} alt="myImage" />      
+        <img className=" w-full" src= "https://th.bing.com/th/id/OIP.ZyzAnykQHIDvs1BSbsWTbQAAAA?rs=1&pid=ImgDetMain" alt="myImage" />      
       </div>
 
       <img onClick={toggle} src= {menuicon} className="md:hidden h-9 w-9"/>
